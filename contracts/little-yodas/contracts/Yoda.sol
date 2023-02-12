@@ -2,9 +2,10 @@
 pragma solidity ^0.8.0;
 
 import '@imtbl/imx-contracts/contracts/IMintable.sol';
+import '@thirdweb-dev/contracts/multiwrap/Multiwrap.sol';
 import '@thirdweb-dev/contracts/base/ERC721Base.sol';
 
-contract YodaContract is IMintable, ERC721Base {
+contract ChessPieceWrap is IMintable, MultiWrap, ERC721Base {
   constructor(
     string memory _name,
     string memory _symbol,

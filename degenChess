@@ -50,3 +50,27 @@ INFO 2023-02-11T15:29:33+00:00 Created collection | component=[IMX-CREATE-COLLEC
   "created_at": "2023-02-11T15:29:33.609705Z",
   "updated_at": "2023-02-11T15:29:33.609705Z"
 }
+
+
+> @imtbl/imx-sdk-example@1.0.0 onboarding:create-collection /home/gmondelli/dev/imx-examples
+> ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/3-create-collection.ts
+
+INFO 2023-02-11T17:56:34+00:00 Creating collection... | component=[IMX-CREATE-COLLECTION]
+extra="0xD314b8E99CadF438a00c7975A92B89ddB524Aa65"
+REQUEST:
+ POST https://api.sandbox.x.immutable.com/v1collections
+RESPONSE:
+ 201 Created
+INFO 2023-02-11T17:56:37+00:00 Created collection | component=[IMX-CREATE-COLLECTION] extra=undefined
+{
+  "address": "0xd314b8e99cadf438a00c7975a92b89ddb524aa65",
+  "name": "ENTER_COLLECTION_NAME",
+  "description": "",
+  "icon_url": "",
+  "collection_image_url": "",
+  "project_id": 2072,
+  "project_owner_address": "",
+  "metadata_api_url": "",
+  "created_at": "2023-02-11T17:56:37.138854Z",
+  "updated_at": "2023-02-11T17:56:37.138854Z"
+}
