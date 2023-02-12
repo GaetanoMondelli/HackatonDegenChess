@@ -1,0 +1,12 @@
+{
+  "name": "Yoda Pawn",
+  "collection": "Little Yodas",
+  "side": "light",
+  "token_id": "2",
+  "color": "white",
+  "role": "pawn",
+  "description": "Cute little Yoda Pawn",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmS3o9xgrMBg3zUJhvUQSDF7WWfXfDgq5DXKuF6e5SnwfD",
+  "rarity": "common",
+  "collectable": true
+}

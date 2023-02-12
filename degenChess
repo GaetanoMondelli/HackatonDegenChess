@@ -1,0 +1,52 @@
+
+> @imtbl/imx-sdk-example@1.0.0 onboarding:user-registration /home/gmondelli/dev/imx-examples
+> ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/1-user-registration.ts
+
+INFO 2023-02-11T14:56:31+00:00 Registering user... | component=[IMX-USER-REGISTRATION] extra=undefined
+INFO 2023-02-11T14:56:32+00:00 User has been created | component=[IMX-USER-REGISTRATION]
+extra="0x4858b03a389fd505252ca002df1dc73443642192"
+{
+  "newUser": {
+    "tx_hash": ""
+  }
+}
+ ~/dev/imx-examples | main !1  npm run onboarding:create-project                                                                                                           ok | 4s | 14:56:32 
+
+> @imtbl/imx-sdk-example@1.0.0 onboarding:create-project /home/gmondelli/dev/imx-examples
+> ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/2-create-project.ts
+
+INFO 2023-02-11T14:59:33+00:00 Creating project... | component=[IMX-CREATE-PROJECT] extra=undefined
+REQUEST:
+ POST https://api.sandbox.x.immutable.com/v1projects
+RESPONSE:
+ 201 Created
+INFO 2023-02-11T14:59:33+00:00 Created project with ID: 2072 | component=[IMX-CREATE-PROJECT] extra=undefined
+
+
+
+
+----------------------------------------------------------------
+
+
+> @imtbl/imx-sdk-example@1.0.0 onboarding:create-collection /home/gmondelli/dev/imx-examples
+> ts-node -r tsconfig-paths/register -r dotenv/config ./src/onboarding/3-create-collection.ts
+
+INFO 2023-02-11T15:29:31+00:00 Creating collection... | component=[IMX-CREATE-COLLECTION]
+extra="0xddF9b3537be9cEa511F3ff489Dec13cd1234b32E"
+REQUEST:
+ POST https://api.sandbox.x.immutable.com/v1collections
+RESPONSE:
+ 201 Created
+INFO 2023-02-11T15:29:33+00:00 Created collection | component=[IMX-CREATE-COLLECTION] extra=undefined
+{
+  "address": "0xddf9b3537be9cea511f3ff489dec13cd1234b32e",
+  "name": "ENTER_COLLECTION_NAME",
+  "description": "",
+  "icon_url": "",
+  "collection_image_url": "",
+  "project_id": 2072,
+  "project_owner_address": "",
+  "metadata_api_url": "",
+  "created_at": "2023-02-11T15:29:33.609705Z",
+  "updated_at": "2023-02-11T15:29:33.609705Z"
+}
